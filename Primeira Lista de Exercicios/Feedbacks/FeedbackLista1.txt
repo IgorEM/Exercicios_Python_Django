@@ -1,0 +1,34 @@
+# Exercicio 3 - Validação do nome
+# Eu sei que quando vcs fizeram esta primeira lista, nós ainda não tinhamos
+# discutido strings a fundo, mas lembre-se que strings em python são sequências
+# e podemos acessar o tamanho de qualquer sequência em python com o método "len":
+# Ex. len("Igor") => 4. Dito isso, você poderia re-escrever a validação de
+# caracteres no nome da seguinte forma:
+if len(nome) > 3:
+    print("Nome válido")
+else:
+    print("Nome invalido. O nome deve ter 3 caracteres ou mais")
+# ou, em apenas duas linhas de código...
+message = "Nome válido" if len(nome) > 3 else "Nome deve ter mais de 3 caracteres"
+print(message)
+
+# Exercicio 3 - Validação de estado civil
+# Sua solução funciona perfeitamente, mas sempre que precisar verificar se um
+# determinado valor igual à um dos possíveis valores em uma lista
+# pré-determinada, vc poderá usar a seguinte contrução:
+estado_civil = input("Insira seu estado civil: ")
+if estado_civil.lower() in ('s', 'c', 'v', 'd'):
+    print("estado civil válido")
+else:
+    print("estado civil inválido")
+
+# Observe o uso do método .lower(), que deixa seu programa mais flexivel.
+# Usuário digite "D", o "D".lower() irá converter "D" em "d".
+# Mas, dado que strings em python são sequências e que sequências implementam o
+# protocolo de containers, ou seja, implementam o método especial __contains__,
+# o seguinte trecho é perfeitamente válido em Python:
+estado_civil = input("Insira seu estado civil: ")
+if estado_civil.lower() in 'scvd':
+    print("estado civil válido")
+else:
+    print("estado civil inválido")
