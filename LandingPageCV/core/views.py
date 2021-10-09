@@ -6,5 +6,5 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello, world.")
 
-def hello(request):
-    return render(request, "core/hello.html") #templates tá lá no settings
+def home(request):
+    return render(request, "core/home.html") #templates tá lá no settings

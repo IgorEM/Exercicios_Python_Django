@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from core import views
 from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('core/', include('core.urls')), #configurando um conjunto de conexão
-    path('', RedirectView.as_view(url='/core/hello')),
+    path('', RedirectView.as_view(url='/core/home')),
 ]
