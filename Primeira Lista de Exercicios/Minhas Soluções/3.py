@@ -31,7 +31,7 @@ else:
     print('sexo inválido')
 
 estado_civil = input("Insira seu estado civil: ")
-if estado_civil == 's' or 'c' or 'v' or 'd':
+if estado_civil in ("s", "c", "v", "d"):
     print("estado civil válido")
 else:
     print("estado civil inválido")
