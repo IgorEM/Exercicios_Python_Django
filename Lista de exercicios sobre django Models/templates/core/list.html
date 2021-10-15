@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Listagem de Pessoas</title>
+{% endblock %}
+
+{% block content %}
+  <h1>Lista de Pessoas</h1>
+  {% if pessoas.exists %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Data de Nascimento</th>
+          <th scope="col">Tipo Sanguineo</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for p in pessoas %}
+        <tr>
+          <th scope="row">{{ p.pk }}</th>
+          <td>{{ p.nome | upper }}</td>
+          <td>{{ p.data_nasc }}</td>
+          <td>{{ p.tipo_sanguineo }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>Nada a listar</p>
+  {% endif %}
+{% endblock %}

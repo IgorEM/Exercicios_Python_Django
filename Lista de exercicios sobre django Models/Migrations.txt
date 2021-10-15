@@ -1,0 +1,11 @@
+1. Quais Problemas as Migrations resolvem?
+2. Criando Migrations
+3. Aplicando Migrations
+4. Modificando Modelos
+  - Adicionando novos campos não obrigatórios
+  - Adicionando Novos Campos Obrigatórios
+5. Listando Migrations
+6. Aplicando/Gerando Migrations para uma app especifica
+7. Desfazendo Migrações
+  - ATENÇÂO: Desfazer migrações não regerar dados perdidos
+8. Nomeando migrações
