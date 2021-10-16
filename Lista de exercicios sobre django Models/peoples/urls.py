@@ -20,5 +20,5 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('', TemplateView.as_view(template_name="home.html")),
     path('admin/', admin.site.urls),
-    path('peoples/', include('core.urls')),
+    path('peoples/', include('core.urls')), #tudo que chegar pra peoples/ vai pra core.urls peoples/list (por exemplo)
 ]
