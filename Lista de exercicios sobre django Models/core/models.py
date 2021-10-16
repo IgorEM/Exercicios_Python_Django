@@ -1,7 +1,8 @@
 from django.db import models
 from dateutil.relativedelta import relativedelta
 from datetime import date
-
+import json
+#iexact na frente independete maiusculo ou menusculo
 
 class PeopleManager(models.Manager):
 
@@ -11,11 +12,23 @@ class PeopleManager(models.Manager):
     def starts_with(self, text):
         return self.model.objects.filter(nome__istartswith=text)
 
+    def para_json(self, ids):
+        return self.model.objects.filter(id=ids).values()
+
+    def contem(self, text):
+        return self.model.objects.filter(nome__icontains=text)
+
+    def to_json(self, ids):
+        data = self.model.objects.filter(id=ids).values()
+        data = data[0] #para exibir em formato json
+        data['data_nasc'] = data['data_nasc'].isoformat() #type str
+        data['altura'] = str(data['altura']) #type str
+        return json.dumps(data) #tranforma objetos python em
 
 class People(models.Model):
 
     GENDER_CHOICES = [
-        ("F", "Feminino"),
+        ("F", "Feminino"), #(banco de dados, Usuario enxerga)
         ("M", "Masculino"),
     ]
 
