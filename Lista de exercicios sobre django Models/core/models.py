@@ -51,4 +51,4 @@ class People(models.Model):
         return idade
 
     def __str__(self):
-        return self.nome
+        return f"{self.nome} - {self.data_nasc} - {self.idade} anos de idade " #alterando o __str__ da class People
