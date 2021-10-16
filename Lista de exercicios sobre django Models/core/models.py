@@ -44,8 +44,9 @@ class People(models.Model):
 
     @property
     def idade(self):
-        # TODO
-        pass
+        data_atual = date.today()
+        idade = relativedelta(data_atual, self.data_nasc).years
+        return idade
 
     def __str__(self):
         return self.nome
