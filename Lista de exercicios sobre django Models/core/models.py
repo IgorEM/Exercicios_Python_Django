@@ -1,4 +1,6 @@
 from django.db import models
+from dateutil.relativedelta import relativedelta
+from datetime import date
 
 
 class PeopleManager(models.Manager):
