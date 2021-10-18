@@ -5,3 +5,4 @@
 3. Desafio Técnico da Semana 1: https://www.alphavantage.co/documentation/
 4. Landing page CV: https://superdevresources.com/html-resume-templates/
 5. Lista de exercicios sobre django: Models (https://github.com/robsonfs/sample_people)
+6. Projeto Final (https://github.com/robsonfs/inovacao-afro-cartorios)
