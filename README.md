@@ -1,3 +1,8 @@
+# Inova.Ação Afro (C.E.S.A.R / Share RH)
+## Sobre o Inova.Ação Afro
+
+É um programa de formação e capacitação desenvolvido entre a Share RH e o CESAR A iniciativa oferecerá 84h de imersão na linguagem de programação Python e, ao final das aulas, será realizado um processo seletivo para vagas no CESAR.
+
 # Exercicios_Python_Django
 
 1. Primeira Lista de Exercicios: https://docs.google.com/document/d/1n9lhy2Mu7PwNk-V4akHutPwY5_HIlldXJ_vRwDSoNXk/edit?usp=sharing
