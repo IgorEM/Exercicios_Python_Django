@@ -63,3 +63,19 @@ class ContactInformation(models.Model):
     email = models.CharField(max_length=100)
     telefone = models.CharField(max_length=17)
     fax = models.CharField(max_length=100)
+
+
+"""
+Lendo o arquivo csv com pandas:
+
+python manage.py shell
+import pandas as pd
+df = pd.read_csv('Cartorios_utf8.csv', sep=';', index_col=False, na_values="", skipinitialspace=True)
+
+o que cada parametro faz :
+
+index_col=False: Crie um indice numerico ao invés de assumir a primeira coluna "UF" como indice.
+na_values="": Para valores "", salve NaN
+skipinitialspace=True: Ignore espaços vazios repetidos. POr exemplo "       ", vira "" ou "    nada     " vira "nada"
+
+"""
