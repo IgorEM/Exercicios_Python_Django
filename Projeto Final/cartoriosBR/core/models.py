@@ -6,18 +6,18 @@ class Cartorios(models.Model):
     cnpj = models.CharField(max_length=18)
     cns = models.CharField(max_length=8)
     data_de_instalacao = models.CharField(max_length=10)
-    nome_oficial = models.CharField(max_length=300)
-    nome_fantasia = models.CharField(max_length=300, null=True, blank=True)
+    nome_oficial = models.CharField(max_length=200)
+    nome_fantasia = models.CharField(max_length=301, null=True, blank=True)
     nome_do_titular = models.CharField(max_length=100)
     nome_do_substituto = models.CharField(max_length=100)
     nome_do_juiz = models.CharField(max_length=100)
-    observacao = models.CharField(max_length=300)
-    ultima_atualizacao = models.CharField(max_length=300)
-    horario_de_funcionamento = models.CharField(max_length=300)
-    area_de_abrangencia = models.CharField(max_length=300)
-    atribuicoes = models.CharField(max_length=300)
-    comarca = models.CharField(max_length=300)
-    entrancia = models.CharField(max_length=300)
+    observacao = models.CharField(max_length=500)
+    ultima_atualizacao = models.CharField(max_length=140)
+    horario_de_funcionamento = models.CharField(max_length=150)
+    area_de_abrangencia = models.CharField(max_length=601)
+    atribuicoes = models.CharField(max_length=600)
+    comarca = models.CharField(max_length=180)
+    entrancia = models.CharField(max_length=190)
 
 
 class Adressess(models.Model):
@@ -53,7 +53,7 @@ class Adressess(models.Model):
     endereco = models.CharField(max_length=150)
     bairro = models.CharField(max_length=100)
     municipio = models.CharField(max_length=100)
-    cep = models.CharField(max_length=8, null=True)
+    cep = models.CharField(max_length=10, null=True)
     uf = models.CharField(max_length=2, choices=UF_CHOICES)
 
 
@@ -61,7 +61,7 @@ class Adressess(models.Model):
 class ContactInformation(models.Model):
     homepage = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
-    telefone = models.CharField(max_length=17)
+    telefone = models.CharField(max_length=50)
     fax = models.CharField(max_length=100)
 
 
