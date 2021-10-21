@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get('DB_NAME', 'cartoriosBRdb'),
         'USER': os.environ.get('DB_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DB_PASS', '<minha_Senha>'),
+        'PASSWORD': os.environ.get('DB_PASS', '<minha-senha>'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
