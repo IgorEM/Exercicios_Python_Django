@@ -5,6 +5,7 @@
 ### Desafio
 
 1. Registre os modelos **cartorios**, **adressess** e **contact_information** no Django Admin
+![img.png](img.png)
 2. Implemente os seguintes endpoints:
 
 | Endpoint  |  Método  |  Ação  |
