@@ -11,10 +11,17 @@
 | Endpoint  |  Método  |  Ação  |
 | ------------------- | ------------------- | ------------------- |
 |  /cartorios |  GET |  Retorna lista de cartórios paginadas de 50 em 50 |
-![img_2.png](img_2.png)
 |  /cartorios/{uf} |  GET |  Retorna a lista de cartórios da UF paginadas de 50 em 50 |
 |  /cartorios/{id} |  GET |  Retorna os detalhes de um cartório |
 |  /cartorios |  POST |  Adiciona um novo cartório à base de dados |
 |  /cartorios/{id} |  PUT |  Atualização completa de um cartório |
 |  /cartorios/{id} |  PATCH |  Atualização Parcial de um cartório |
 |  /cartorios/{id} |  DELETE |  Remove um cartório da base de dados |
+
+
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+![img_8.png](img_8.png)
+![img_9.png](img_9.png)
