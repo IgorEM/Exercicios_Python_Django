@@ -1,4 +1,4 @@
-from core.models import Cartorios
+from core.models import Cartorios, Adressess
 from rest_framework import serializers
 
 
@@ -23,3 +23,7 @@ class CartoriosSerializer(serializers.HyperlinkedModelSerializer):
                 'entrancia',
                 'uf']
 
+class AdressessSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Adressess
+        fields = '__all__'
