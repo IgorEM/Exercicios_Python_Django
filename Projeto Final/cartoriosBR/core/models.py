@@ -18,6 +18,7 @@ class Cartorios(models.Model):
     atribuicoes = models.CharField(max_length=600)
     comarca = models.CharField(max_length=180)
     entrancia = models.CharField(max_length=190)
+    uf = models.CharField(max_length=2)
 
 
 class Adressess(models.Model):

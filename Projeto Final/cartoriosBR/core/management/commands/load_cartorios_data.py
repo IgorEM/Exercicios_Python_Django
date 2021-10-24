@@ -14,7 +14,7 @@ class Command(BaseCommand):
                              usecols=["cnpj","cns","data_de_instalacao","nome_oficial","nome_fantasia",
                                       "nome_do_titular","nome_do_substituto","nome_do_juiz","observacao",
                                       "ultima_atualizacao","horario_de_funcionamento","area_de_abrangencia",
-                                      "atribuicoes","comarca","entrancia"])
+                                      "atribuicoes","comarca","entrancia","uf"])
 
             data = df.to_dict('records')
 
